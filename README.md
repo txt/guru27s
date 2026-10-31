@@ -17,7 +17,9 @@
 
 # Schedule
 
-Tuesdays 4:30–7:15pm, Jan 12 – Apr 27, 2027 (14 classes). Room: TBD.
+CSC 491-014 (9808) / CSC 591-014 (9812) — one class, two numbers.
+Tuesdays 4:30–7:15pm, 02211 Textiles Complex.
+Jan 12 – Apr 27, 2027 (14 classes).
 See [policies](docs/lect/policies.md) for grading.
 
 **Key dates.** First day of classes Jan 11, so our first class is Jan 12.
@@ -26,6 +28,8 @@ Last class Apr 27. Reading Day Apr 28. Commencement May 8.
 **Last day to appeal grades: Wed May 5.** Grades submitted Fri May 7, 5:00pm.
 MLK Day (Jan 18) and New Year's Day fall on a Monday and a Friday, so
 this class loses no Tuesday to them.
+
+**Marks.** Quizzes 13, project, mid-term 18, final 36 (final = twice the mid-term). 591 students also write an essay. A bad project or mid-term can be voided onto the final — see [policies](docs/lect/policies.md).
 
 **Exams.** Mid-term: Mar 23, in class. Final: **Thu Apr 29, 3:30–6:00pm**
 — the NCSU slot for Tu 4:30 classes. Note it is a Thursday, not our usual
