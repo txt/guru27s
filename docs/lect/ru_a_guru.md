@@ -21,9 +21,9 @@ A guru is not a senior person. Seniority is time served. A guru is
 someone whose judgment you would trust on a problem nobody has solved
 before, in a codebase nobody understands, under a deadline.
 
-This page is what that judgment is made of. Eight things. The first
-three are about knowing, building and finding out. The last five are
-about deciding and living with the result — the half that gets skipped.
+This page is what that judgment is made of. Ten things. The first few
+are about knowing, building and finding out. The rest are about deciding
+and living with the result — the half that gets skipped.
 
 ## 1. Breadth
 
@@ -36,7 +36,32 @@ in front of you is an old problem wearing new clothes. You cannot
 recognise what you have never seen. One language teaches you one way to
 be wrong.
 
-## 2. Build for the people who will pull it apart
+## 2. Works anywhere
+
+Gurus are not stranded by their environment. Drop one onto an unfamiliar
+machine — old operating system, no root, no network, whatever language
+runtime happens to be installed — and they still get the job done.
+
+Two habits produce this.
+
+**Every dependency is a bet.** A package you install is a package you
+now maintain: its breakage is your breakage, its abandonment is your
+outage, its install step is the reason your code will not run on the
+machine that matters. Reach for the standard library first. Add a
+dependency when it earns its place, not when it saves ten minutes.
+Code with no dependencies is also code someone else can steal, which is
+section 3.
+
+**The command line is the universal interface.** It is present on every
+machine, it composes, it scripts, it logs, and it can be driven by
+another program. GUI skill does not transfer between applications and
+cannot be automated. A guru is fluent at the command line and fluent in
+applications, builds both, and defaults to the one that pipes.
+
+That is the same rule as text in, text out in [tui.md](tui.md): any
+function reachable from an interface must also be reachable without it.
+
+## 3. Build for the people who will pull it apart
 
 Gurus know that other people — and now other programs — will take what
 they built, break it into pieces, and use those pieces in ways nobody
@@ -48,7 +73,7 @@ theft is one file. Make each one do one job, run standalone, carry its
 own documentation, and depend on nothing exotic. Assume the thief is in a
 hurry and will not read your wiki.
 
-## 3. Software engineering is an experiment
+## 4. Software engineering is an experiment
 
 Gurus treat design as something you find out about, not something you
 decide in advance. Different designs are hypotheses. So they know test
@@ -62,7 +87,35 @@ invariants, metamorphic comparisons, models to check against. If you
 remember one idea from the semester, remember that generating is cheap
 and judging is not.
 
-## 4. Economics: knowing what not to do
+## 5. Optimize the debug cycle
+
+Cycle time is the multiplier on everything in section 4. How long from
+changing one line to seeing what it did? If that loop is ten seconds you
+can run two hundred experiments today. If it is ten minutes you can run
+eight, and you will stop asking questions you cannot afford to answer.
+
+So a guru's first move in an unfamiliar codebase is not to fix the bug.
+It is to make the edit-to-result loop fast. Everything after that is
+cheaper.
+
+What this looks like in practice:
+
+- One key, or one short command, runs the thing. No ceremony.
+- Run the smallest relevant subset of tests, not the whole suite.
+- Build the smallest reproduction of the bug, then shrink it further —
+  the same delta-debugging move as in [tui.md](tui.md).
+- Make failures deterministic: fix the seed, inject the clock. A bug you
+  cannot reproduce is a bug you cannot fix, and a flaky test burns the
+  loop forever.
+- Bisect. The machine can find the breaking commit while you think.
+- A print statement in the right place often beats a debugger. Knowing
+  which is which is the skill.
+
+Gurus are physically irritated by a slow test suite, and they are right
+to be. A slow loop does not just waste time — it silently changes which
+questions you are willing to ask.
+
+## 6. Economics: knowing what not to do
 
 This is the sharpest marker of a guru, and the easiest one to miss.
 
@@ -75,7 +128,7 @@ budgets, early stopping, knowing when more testing has stopped paying.
 Without this, section 3 never terminates — there is always another
 experiment to run, and a career can disappear into them.
 
-## 5. Trade-offs, not metrics
+## 7. Trade-offs, not metrics
 
 There is never one number.
 
@@ -87,7 +140,7 @@ treating it as paperwork.
 Gurus distrust any single score, including the ones they invented
 themselves. When someone shows you one number, ask what it traded away.
 
-## 6. Reading and deleting beat writing
+## 8. Reading and deleting beat writing
 
 The scarce skill inverted. Generating code is now nearly free, so writing
 it is no longer the bottleneck — and the bottleneck is where the skill
@@ -100,7 +153,7 @@ solve a problem by adding something.
 
 The best patch is usually smaller than the code it replaces.
 
-## 7. Data provenance
+## 9. Data provenance
 
 Section 3 is only as honest as what goes into it.
 
@@ -112,7 +165,7 @@ Statistics tells you what the numbers say. Provenance tells you whether
 the numbers mean anything. Most "we beat the baseline" results die here,
 and they die quietly, long after publication.
 
-## 8. Feedback loops: living with it
+## 10. Feedback loops: living with it
 
 The experiment does not end at the demo.
 
@@ -151,7 +204,10 @@ about your own work, and that get harder as you get better.
 5. What is the provenance of your data? What is it missing?
 6. When your system misbehaves in production, how would you find out?
 7. What did you delete this month?
-8. Which old idea is your new problem wearing as a disguise?
+8. How long is your edit-to-result loop, and when did you last shorten
+   it?
+9. Could you do today's work on a fresh machine with no network?
+10. Which old idea is your new problem wearing as a disguise?
 
 If most of these are easy, you are reading the wrong page. If most are
 uncomfortable, you are in the right class.
