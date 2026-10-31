@@ -11,9 +11,9 @@
       src="https://img.shields.io/badge/Moodle-%23dc143c?style=flat-square&logo=moodle&logoColor=white" /></a>
   <a href="#"><img 
       src="https://img.shields.io/badge/Chat-%23008080?style=flat-square&logo=discord&logoColor=white" /></a>
-  <a href="https://github.com/txt/guru27s/blob/main/LICENSE"><img 
+  <a href="https://github.com/txt/guru27s/blob/main/LICENSE.md"><img 
       src="https://img.shields.io/badge/©%20timm%202027-%234b4b4b?style=flat-square&logoColor=white" /></a></p>
-<h1 align="center">:cyclone: guru <br>NC State, Spring '27</h1>
+<p align="center"><img width="900" src="https://raw.githubusercontent.com/txt/guru27s/refs/heads/main/etc/img/banner.png" alt="guru"></p>
 
 # TUIs
 

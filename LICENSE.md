@@ -1,3 +1,25 @@
+<p align="center">
+  <a href="https://github.com/txt/guru27s/blob/main/README.md"><img 
+     src="https://img.shields.io/badge/Home-%23ff5733?style=flat-square&logo=home&logoColor=white" /></a>
+  <a href="https://github.com/txt/guru27s/blob/main/docs/lect/policies.md"><img 
+      src="https://img.shields.io/badge/Policies-%230055ff?style=flat-square&logo=openai&logoColor=white" /></a>
+  <a href="#"><img
+      src="https://img.shields.io/badge/Teams-%23ffd700?style=flat-square&logo=users&logoColor=white" /></a>
+  <a href="#"><img 
+      src="https://img.shields.io/badge/Lectures-%238a2be2?style=flat-square&logo=panopto&logoColor=white" /></a>
+  <a href="#"><img 
+      src="https://img.shields.io/badge/Moodle-%23dc143c?style=flat-square&logo=moodle&logoColor=white" /></a>
+  <a href="#"><img 
+      src="https://img.shields.io/badge/Chat-%23008080?style=flat-square&logo=discord&logoColor=white" /></a>
+  <a href="https://github.com/txt/guru27s/blob/main/LICENSE.md"><img 
+      src="https://img.shields.io/badge/©%20timm%202027-%234b4b4b?style=flat-square&logoColor=white" /></a></p>
+<p align="center"><img width="900" src="https://raw.githubusercontent.com/txt/guru27s/refs/heads/main/etc/img/banner.png" alt="guru"></p>
+
+# License
+
+Apache License 2.0.
+
+```
                                  Apache License
                            Version 2.0, January 2004
                         http://www.apache.org/licenses/
@@ -199,3 +221,4 @@
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.
+```

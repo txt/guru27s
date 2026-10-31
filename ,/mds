@@ -10,7 +10,7 @@ sed -n '1,/^# /p' "$root/README.md" | sed '$d' > "$hdr"
 for f in "$root"/*.md $(find "$root/docs" -name '*.md' 2>/dev/null); do
   [ -f "$f" ] || continue
   [ "$f" = "$root/README.md" ] && continue
-  grep -q '^# ' "$f" || { echo "skip $(basename "$f"): no '# ' heading"; continue; }
+  grep -q '^# ' "$f" || { echo "FAIL $f: no '# ' heading, header not added"; bad=1; continue; }
   tmp=$(mktemp)
   cat "$hdr" > "$tmp"
   awk 'f{print;next} /^# /{f=1;print}' "$f" >> "$tmp"
@@ -18,3 +18,5 @@ for f in "$root"/*.md $(find "$root/docs" -name '*.md' 2>/dev/null); do
   echo "$(basename "$f")"
 done
 rm -f "$hdr"
+[ -n "$bad" ] && { echo "add a '# ' heading to the file(s) above, then rerun"; exit 1; }
+exit 0
