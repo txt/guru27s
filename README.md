@@ -35,8 +35,8 @@ day, and starts an hour before our usual time.
 
 | 📅 Date | 🎓 Lecture | 🛠️ Project <br>(due start of class) | 📝 Review |
 |:-------:|:----------:|:-----------------------------------:|:---------:|
-| Jan 12 | intro (1 of 2) | **P-2:** intro | |
-| Jan 19 | intro (2 of 2) | **P-1:** intro | |
+| Jan 12 | intro (1 of 2) |   | |
+| Jan 19 | intro (2 of 2) |   | |
 | Jan 26 | stats | **P1:** stats (census ≈ Jan 25–26) | |
 | Feb 02 | test generation | **P2:** test case generation via clustering + interpolation | |
 | Feb 09 | evaluation | **P3:** check generation works: classifier on real data, 80:20 (or 80% → interpolate → train), then test; stats + eval criteria | |
