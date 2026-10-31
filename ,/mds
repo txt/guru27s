@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+## copy README's first section onto every other .md
+# first section = README line 1 up to (not incl) its first "# " heading.
+# in each target, that block replaces everything before the target's own
+# first "# " heading.
+root=$(git rev-parse --show-toplevel 2>/dev/null || pwd)
+hdr=$(mktemp)
+sed -n '1,/^# /p' "$root/README.md" | sed '$d' > "$hdr"
+[ -s "$hdr" ] || { echo "no header in README.md"; exit 1; }
+for f in "$root"/*.md $(find "$root/docs" -name '*.md' 2>/dev/null); do
+  [ -f "$f" ] || continue
+  [ "$f" = "$root/README.md" ] && continue
+  grep -q '^# ' "$f" || { echo "skip $(basename "$f"): no '# ' heading"; continue; }
+  tmp=$(mktemp)
+  cat "$hdr" > "$tmp"
+  awk 'f{print;next} /^# /{f=1;print}' "$f" >> "$tmp"
+  mv "$tmp" "$f"
+  echo "$(basename "$f")"
+done
+rm -f "$hdr"

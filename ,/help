@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+## show this help
+here=$(cd "$(dirname "$0")" && pwd)
+printf "\nusage:\n  ,/\033[36m<command>\033[0m\n\ncommands:\n"
+for f in "$here"/*; do
+  [ -x "$f" ] || continue
+  doc=$(sed -n '2{s/^## //p;}' "$f")
+  [ -n "$doc" ] && printf "  \033[36m%-8s\033[0m %s\n" "$(basename "$f")" "$doc"
+done
+echo

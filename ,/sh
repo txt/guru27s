@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+## bash with , on PATH (then: push, mds, ...)
+here=$(cd "$(dirname "$0")" && pwd)
+export PATH="$here:$PATH"
+exec bash --init-file "$here/ell" -i

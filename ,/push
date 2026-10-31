@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+## commit all, push to github
+read -p "Reason? " msg
+git commit -am "${msg:-save}"
+git push
+git status
