@@ -29,7 +29,7 @@ Last class Apr 27. Reading Day Apr 28. Commencement May 8.
 MLK Day (Jan 18) and New Year's Day fall on a Monday and a Friday, so
 this class loses no Tuesday to them.
 
-**Marks.** Quizzes 13, project, mid-term 18, final 36 (final = twice the mid-term). 591 students also write an essay. A bad project or mid-term can be voided onto the final — see [policies](docs/lect/policies.md).
+**Marks.** Quizzes 13, project (teams of 3), mid-term 18, final 36 (final = twice the mid-term). 591 students also write an essay. A bad project or mid-term can be voided onto the final — see [policies](docs/lect/policies.md).
 
 **Exams.** Mid-term: Mar 23, in class. Final: **Thu Apr 29, 3:30–6:00pm**
 — the NCSU slot for Tu 4:30 classes. Note it is a Thursday, not our usual
@@ -39,7 +39,7 @@ day, and starts an hour before our usual time.
 
 | 📅 Date | 🎓 Lecture | 🛠️ Project <br>(due start of class) | 📝 Review |
 |:-------:|:----------:|:-----------------------------------:|:---------:|
-| Jan 12 | intro (1 of 2) |   | |
+| Jan 12 | [ru a guru?](docs/lect/ru_a_guru.md) (1 of 2) |   | |
 | Jan 19 | intro (2 of 2) | **P-1:** intro | |
 | Jan 26 | stats | **P1:** stats (census ≈ Jan 25–26) | |
 | Feb 02 | test generation | **P2:** test case generation via clustering + interpolation | |

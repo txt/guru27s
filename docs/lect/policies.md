@@ -54,7 +54,8 @@ with appropriate notification to students.
 Upon completion of this course, students will be able to:
 
 1. Design, implement and evaluate a working software system, tune it, and
-   run it against real data at scale.
+   run it against real data at scale, functioning effectively as a member
+   of a team of three.
 2. Analyze a problem to the point of a checkable claim — metric,
    threshold, baseline — and build a runnable instrument that tests it.
 3. Generate test inputs automatically, and judge the result when no
@@ -78,14 +79,17 @@ These course outcomes support the departmental
 | SO2 Design, implement and evaluate a computing-based solution | 1, 2 | Project |
 | SO3 Communicate effectively in a variety of professional contexts | 5, 6 | Project reports, 591 essay |
 | SO4 Recognize professional responsibilities and make informed judgments | 4, 5 | Project, AI-use disclosure |
-| SO5 Function effectively as a member or leader of a team | — | Not assessed in this course |
+| SO5 Function effectively as a member or leader of a team | 1 | Project (teams of three) |
 | SO6 Apply computer science theory and software development fundamentals | 1, 3 | Project, quizzes, exams |
 
-SO5 is deliberately left unassessed: the graded work here is individual,
-and an outcome is only claimed when a graded deliverable actually
-measures it.
+Every outcome above is claimed only because a graded deliverable
+measures it. The project is team work; the quizzes, exams and 591 essay
+are individual.
 
 ## Student Performance Assessment
+
+The project is done in **teams of three**. Quizzes, exams and the 591
+essay are individual work.
 
 Graded on in-class quizzes, a project, a mid-term and a final exam.
 591 students also write an essay. The final exam is worth exactly twice
@@ -156,7 +160,9 @@ moves 18.
 - This replaces any other make-up work. There is no extra assignment.
 
 **Attendance and participation:** Classes are in person. Quizzes happen in
-class and are the attendance mechanism. Absences are handled under NCSU
+class and are the attendance mechanism. Projects are team submissions; all
+team members are expected to contribute, and members may be graded
+individually where contributions are unequal. Absences are handled under NCSU
 REG 02.20.03 (Attendance Regulations).
 
 **Late work:** Late submissions lose one mark per day late (weekends count
