@@ -41,17 +41,17 @@ day, and starts an hour before our usual time.
 | Feb 02 | test generation | **P2:** test case generation via clustering + interpolation | |
 | Feb 09 | evaluation | **P3:** check generation works: classifier on real data, 80:20 (or 80% → interpolate → train), then test; stats + eval criteria | |
 | 🟩 ${\color{green}\textsf{Feb 16 — Wellness Day, no class}}$ | | | |
-| Feb 23 | build | **P4:** build it (week 1 of 2); have a tune-able system | |
-| Mar 02 | build | **P5:** build it (week 2 of 2) | |
-| Mar 09 | scale-up | **P6:** run against data: does it scale? | |
+| Feb 23 | build | | |
+| Mar 02 | build | **P4:** build it: a tune-able system | |
+| Mar 09 | scale-up | **P5:** run against data: does it scale? | |
 | 🟩 ${\color{green}\textsf{Mar 16 — Spring break, no class}}$ | | | |
-| Mar 23 | 🟥 ${\color{#ff9999}\textsf{Mid-term exam}}$ | **P7:** mid-term | |
-| Mar 30 | decision support | **P8:** decision support (week 1 of 2) | |
-| Apr 06 | decision support | **P9:** decision support (week 2 of 2) | |
-| Apr 13 | surprise | **P10:** run against data: what surprises? | |
-| Apr 20 | redesign | **P11:** redesign: how to run it better (week 1 of 2) | |
-| Apr 27 | redesign (last class) | **P12:** redesign (week 2 of 2) | |
-| 🟥 ${\color{#ff9999}\textsf{Thu Apr 29, 3:30–6:00pm (final exam slot)}}$ | | **P13:** run again: a better system (final deliverable) | |
+| Mar 23 | 🟥 ${\color{#ff9999}\textsf{Mid-term exam}}$ | **P6:** mid-term | |
+| Mar 30 | decision support | | |
+| Apr 06 | decision support | **P7:** decision support | |
+| Apr 13 | surprise | **P8:** run against data: what surprises? | |
+| Apr 20 | redesign | | |
+| Apr 27 | redesign (last class) | **P9:** redesign: how to run it better | |
+| 🟥 ${\color{#ff9999}\textsf{Thu Apr 29, 3:30–6:00pm (final exam slot)}}$ | | **P10:** run again: a better system (final deliverable) | |
 | May 05 — last day to appeal grades | | | |
 | May 07 — grades submitted, 5:00pm | | | |
 
