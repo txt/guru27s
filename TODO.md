@@ -11,3 +11,12 @@ basic ai
 - simulated annleaing
 - tree (learned from examples annlealled?)
 - restart, retry 
+
+config:
+- the windows registraty stoey
+- Nixos
+- the py.Makefile story
+
+CI
+- the html auto generated story
+- my fixes in py/Maefile
